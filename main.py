@@ -1,7 +1,6 @@
 string = input("Enter a string: ")
-list = list(string)
-if len(list) <= 140:
-    print(list)
+if len(string) <= 140:
+    print(string)
 else:
     print("Too long!")
 string = new_string = string.title()
@@ -10,8 +9,8 @@ for char in string:
     if char != " ":
         new_string += char
 print(new_string)
-new_string = new_string.title()
-print('#' + new_string.title())
+new_string = new_string
+print('#' + new_string)
 
 #new_string = string.title()
 #print(new_string)
